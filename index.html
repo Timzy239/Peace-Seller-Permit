@@ -1,0 +1,334 @@
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shopify Seller Plans</title>
+  <meta name="description" content="Shopify Seller Permit Plans - choose 1, 3, 5 or 10 year compliance plans" />
+  <style>
+    /* Simple styles to mirror the page layout */
+    body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0; 
+  padding: 0; 
+  background: #f4f6f8; /* Shopify light gray */
+  color: #212b36;      /* Shopify text */
+}
+
+.container {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  color: #005723; /* Shopify dark green */
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.plan {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  border-top: 5px solid #96bf48; /* Shopify green accent */
+}
+
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 8px;
+  color: #005723; /* Shopify dark green */
+}
+
+.features {
+  margin: 10px 0 0 0;
+  padding-left: 18px;
+}
+
+.cta {
+  margin-top: 12px;
+}
+
+.form-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 22px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.04);
+  border-top: 4px solid #96bf48;
+}
+
+label {
+  display: block;
+  margin: 10px 0 6px;
+  font-size: 14px;
+}
+
+input[type="text"], input[type="email"], select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.footer {
+  margin-top: 24px;
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+}
+
+.small {
+  font-size: 13px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #96bf48; /* Shopify green button */
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  font-weight: 600;
+  transition: background .2s;
+}
+
+.btn:hover, .btn:focus {
+  background: #005723;
+}
+.features li {
+  list-style: none;
+  position: relative;
+  padding-left: 22px;
+}
+.features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #96bf48; /* Shopify green */
+  font-weight: bold;
+  font-size: 18px;
+  top: 0;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(33,43,54,0.36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-card {
+  min-width: 340px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #666;
+  cursor: pointer;
+}
+.plan-save {
+  margin: 4px 0;
+  color: #009900;
+  font-size: 1.07em;
+  font-weight: 600;
+}
+.popular-stamp {
+  display: inline-block;
+  background: #ffde59;
+  color: #b77c00;
+  font-weight: bold;
+  font-size: 0.97em;
+  padding: 3px 12px;
+  border-radius: 16px;
+  margin-left: 10px;
+  vertical-align: middle;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  letter-spacing: 1px;
+}
+.popular-stamp::before {
+  content: '★ ';
+  color: #f5a623;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header style="display: flex; flex-direction: column; align-items: center; margin-bottom: 18px;">
+  <div style="display: flex; align-items: center; gap: 12px;">
+    <img src="https://cdn.shopify.com/assets/images/logos/shopify-bag.png" alt="Shopify Logo" style="width:48px; height:48px;">
+    <h1 style="margin: 0; font-size: 2.2em; color: #005723;">Shopify Seller Plans</h1>
+  </div>
+  <h2 style="margin: 8px 0 4px 0; font-size: 1.3em; color: #212b36;">
+    Choose Your Perfect Plan
+  </h2>
+  <p class="small" style="margin: 0; color: #666;">
+    Get compliant with our seller permit solutions designed for Shopify merchants of all sizes. Select the plan that best fits your business needs.
+  </p>
+</header>
+
+    <section class="plans" aria-label="plans">
+      <article class="plan" id="plan-1yr">
+        <h2>3 Months Plan</h2>
+        <div class="price">$149 /year</div>
+        <p class="small">Basic compliance for new sellers</p>
+        <ul class="features">
+          <li>3 Months coverage</li>
+          <li>Basic compliance</li>
+          <li>Email support</li>
+        </ul>
+        <div class="cta"><a class="btn" href="#apply?plan=3months">Select Plan</a></div>
+      </article>
+
+      <article class="plan" id="plan-3yr">
+        <h2>6 Months Plan</h2
+        <span class="popular-stamp" title="Most Popular">★ Popular</span>
+<div class="price">$269 ($90/year)</div>
+<h3 class="plan-save">Save $10</h3>
+<p class="small">Great for growing businesses</p>
+        <ul class="features">
+          <li>6 Months coverage</li>
+          <li>Priority support</li>
+          <li>Compliance updates</li>
+        </ul>
+        <div class="cta"><a class="btn" href="#apply?plan=6months">Select Plan</a></div>
+      </article>
+
+      <article class="plan" id="plan-5yr">
+        <h2>10 Months Plan</h2>
+        <div class="price">$399 ($80/year)</div>
+        <h3 class="plan-save">Save $20</h3>
+<p class="small">Ideal for established sellers</p>
+        <ul class="features">
+          <li>10 Months coverage</li>
+          <li>24/7 support</li>
+          <li>Compliance monitoring</li>
+        </ul>
+        <div class="cta"><a class="btn" href="#apply?plan=10months">Select Plan</a></div>
+      </article>
+
+      <article class="plan" id="plan-10yr">
+        <h2>1 Year Plan</h2>
+        <div class="price">$700 ($70/year)</div>
+        <h3 class="plan-save">Save $30</h3>
+<p class="small">Best for long-term sellers</p>
+        <ul class="features">
+          <li>1 year coverage</li>
+          <li>Dedicated account manager</li>
+          <li>Full compliance package</li>
+        </ul>
+        <div class="cta"><a class="btn" href="#apply?plan=1year">Select Plan</a></div>
+      </article>
+    </section>
+    <!-- Modal overlay -->
+<div class="modal-overlay" id="modal-overlay" style="display:none;">
+  <div class="form-card modal-card">
+    <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+    <div id="selected-plan" style="margin-bottom:12px; font-weight:bold; color:#005723;"></div>
+      <h3>Application Form</h3>
+      <form id="seller-form" action="https://submit-form.com/EcZABKRiu" method="POST">
+        <input type="hidden" name="_redirect" value="https://shopify-seller-permit-portal.netlify.app/thankyou.html">
+        <input type="hidden" name="plan" id="form-plan" value="">
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="store">Store URL</label>
+        <input id="store" name="store" type="text" placeholder="https://yourstore.myshopify.com" required>
+
+        <label for="location">Location of Operation</label>
+        <select id="location" name="location" required>
+          <option value="">Select your location</option>
+          <option>United States</option>
+          <option>Canada</option>
+          <option>United Kingdom</option>
+          <option>Australia</option>
+          <option>European Union</option>
+          <option>Other</option>
+        </select>
+
+        <label for="business">Business Name</label>
+        <input id="business" name="business" type="text" placeholder="Your business name" required>
+
+        <div style="margin-top:10px">
+          <label><input type="checkbox" id="agree" required> I agree to the terms and conditions</label>
+        </div>
+
+        <div style="margin-top:12px">
+          <button class="btn" type="submit">Submit Application</button>
+          
+          
+        </div>
+      </form>
+
+
+    </section>
+
+    <footer class="footer">
+      <p class="small">Facebook · Instagram · Twitter · LinkedIn</p>
+      <p class="small">© 2025 Shopify Seller Permit. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+ // Show modal when plan selected
+document.querySelectorAll('.plans .btn').forEach(function(btn) {
+  btn.addEventListener('click', function(ev) {
+    ev.preventDefault();
+    var planId = this.closest('.plan').id;
+    var planName = this.closest('.plan').querySelector('h2').textContent;
+    document.getElementById('modal-overlay').style.display = 'flex';
+    document.getElementById('form-plan').value = planId.replace('plan-', '').replace('yr','');
+    document.getElementById('selected-plan').textContent = 'Selected Plan: ' + planName;
+    document.getElementById('seller-form').style.display = 'block';
+    
+  });
+});
+
+// Close modal
+document.getElementById('modal-close').onclick = function() {
+  document.getElementById('modal-overlay').style.display = 'none';
+  document.getElementById('seller-form').style.display = 'block';
+  
+};
+
+
+
+</script>
+</body>
+</html>
